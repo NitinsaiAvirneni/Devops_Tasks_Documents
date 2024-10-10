@@ -1,0 +1,38 @@
+Team 1:
+Create a simple logging service which writes to /usr/log/logfile
+This webserver should have a resource limit:
+memory 200Mi (min) and 500Mi (max)
+cpu 250m(min) and 500m (max)
+Mount a local directory and attach to the pod
+Write logs to this local volume
+prove that the logs written by the pod and received in the local directory
+
+Team 2:
+Create an daemonset with a readiness and liveliness probe
+Show the difference between these two when the app runs
+Generate logs to prove that they executed / executing always
+Kill the app instances and ensure that when restarting these probes come to play
+Maintain a failure threshold for these probes
+
+Team 3:
+Create a deployment with rolling update strategy.
+Set maxsurge and maxunavailable values for the deployment
+perform a rolling update
+have 5 replicas for the deployment
+Demonstrate that the update strategy worked
+Show the difference between these two
+
+Team 4:
+Create a deployment with blue green strategy.
+Bring in a new version by using selectors at service level.
+Switch application traffic to new version by changing the service to a new label.
+have 5 replicas for the deployment
+Demonstrate that the update strategy worked
+
+Team 5:
+Create a job which executes every 10 minutes
+This job uses a manifest to read temperature of a city from an external service and logs.
+Let each job read the city from a flat file based on the input to the job
+Maintain a failure threshold for the job
+have a 5 jobs running parallel
+Show your results

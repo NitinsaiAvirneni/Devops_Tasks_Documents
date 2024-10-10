@@ -1,0 +1,75 @@
+    1  mysql
+    2  yum install mysql
+    3  mysql -h myappdb.crsqmpfiwsqi.us-east-1.rds.amazonaws.com -u root -p 
+    4  hostname 
+    5  vi /etc/sysconfig/networking/
+    6  vi /etc/sysconfig/network
+    7  /etc/init.d/network restart
+    8  hostname 
+    9  init 6
+   10  exit
+   11  docker
+   12  yum install docker
+   13  docker images
+   14  service docker start
+   15  docker images
+   16  docker ps 
+   17  docker pull centos
+   18  docker images
+   19  docker run -it ff426288ea90 /bin/bash
+   20  docker images
+   21  docker ps
+   22  ls
+   23  touch Dockerfile 
+   24  ls
+   25  vim Dockerfile
+   26  cat Dockerfile
+   27  docker images
+   28  ls
+   29  docker build -t nginximg 
+   30  ls
+   31  pwd
+   32  docker build -t nginximg .
+   33  vim Dockerfile 
+   34  docker build -t nginximg .
+   35  docker images
+   36  docker run -it -p 9000:80 07cb39e77628 /bin/bash
+   37  ls
+   38  pwd
+   39  vim Dockerfile 
+   40  history 
+   41  vim Dockerfile 
+   42  docker images
+   43  docker build -t myapp .
+   44  docker images
+   45  docker run -it -p 9001:80 54a77d6cf4f8 /bin/bash
+   46  docker ps
+   47  docker images
+   48  docker run -it -p 9002:80 54a77d6cf4f8 /bin/bash
+   49  docker ps
+   50  ps -eaf
+   51  ls
+   52  cat Dockerfile 
+   53  docker ps
+   54  docker attch 7a76e8b22915
+   55  docker attach 7a76e8b22915
+   56  ls
+   57  df -kh
+   58  ca /var/lib/docker/
+   59  ls
+   60  cd /var/lib/docker/
+   61  ls
+   62  cd containers
+   63  ls
+   64  docker ps -a
+   65  cd 4eb96c6a26e7c0a304740e272b4a3abe966b74bfde8cad942a5dad7cab1e183e
+   66  ls
+   67  cd ..
+   68  ls
+   69  cd ..
+   70  ls
+   71  cd volumes
+   72  ls
+   73  cd
+   74  history 
+   75  history > history.txt
